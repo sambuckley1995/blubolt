@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+}
+
+.callTo {
+    cursor: pointer;
+    outline: inherit;
+    margin: 0;
+    border: none;
+    width: 48%;
+    height: 4em;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.callsToAction button:nth-child(1) {
+    background-color: #0191DE;
+}
+
+.callsToAction button:nth-child(2) {
+    background-color: #F535C1;
+}
+
+.callsToAction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teal {
+    color: #00D0BB;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 340px;
+}
+
+.largeFont {
+    font-size: 1.8rem;
+}
+
+.productInformation>* {
+    margin: 0.5rem 0;
+}
+
+img {
+    /* height: 400px; */
+    width: 100%;
+}
+
+.grid-product-list {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-product-list>.productCard {
+    width: inherit;
+}
