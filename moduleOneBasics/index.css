@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: inherit;
+    margin: 0;
+    border: none;
+    width: 48%;
+    height: 4em;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.calls-to-action button:nth-child(1) {
+    background-color: #0191DE;
+}
+
+.calls-to-action button:nth-child(2) {
+    background-color: #F535C1;
+}
+
+.calls-to-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teal {
+    color: #00D0BB;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 340px;
+}
+
+.large-font {
+    font-size: 1.8rem;
+}
+
+.product-information>* {
+    margin: 0.5rem 0;
+}
+
+img {
+    /* height: 400px; */
+    width: 100%;
+}
+
+.grid-product-list {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-product-list>.product-card {
+    width: inherit;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
